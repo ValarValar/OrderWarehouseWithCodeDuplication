@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Order(models.Model):
+class WarehouseOrder(models.Model):
     order_name = models.CharField(max_length=30, unique=True, verbose_name="Order name")
 
     class Status(models.TextChoices):

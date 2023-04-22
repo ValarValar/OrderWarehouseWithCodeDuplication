@@ -3,7 +3,7 @@ import http
 from rest_framework import viewsets, mixins
 from rest_framework.response import Response
 
-from .models import Order
+from .models import WarehouseOrder
 from .serializers import OrderSerializer
 
 
@@ -13,7 +13,7 @@ class OrderWebhookViewSet(
     mixins.UpdateModelMixin,
     viewsets.GenericViewSet
 ):
-    queryset = Order.objects.all()
+    queryset = WarehouseOrder.objects.all()
     serializer_class = OrderSerializer
     lookup_field = 'order_name'
 
