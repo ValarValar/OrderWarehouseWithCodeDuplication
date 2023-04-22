@@ -1,6 +1,7 @@
 # OrderWarehouseWithCodeDuplication
 This version is with code duplication in 2 separate django apps    
-
+## Setup
+docker-compose up --build -d
 ## Task
 It would be great if you can create a Django project and provide us with a link to a git repository.
 Please, be aware that it's a test task, so we are not expecting a robust solution, and it's up to you how stable you want to make it.
